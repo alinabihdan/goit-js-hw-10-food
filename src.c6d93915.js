@@ -11,4 +11,4 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=s(require("./templates/menu.hbs")),t=s(require("./menu.json"));function s(e){return e&&e.__esModule?e:{default:e}}const c=document.querySelector(".js-menu"),r=(0,e.default)(t.default);c.insertAdjacentHTML("beforeend",r);const a={LIGHT:"light-theme",DARK:"dark-theme"},l=document.querySelector("#theme-switch-toggle"),n=document.querySelector("body"),o=localStorage.getItem("theme");function u(){l.checked?(n.classList.replace(a.LIGHT,a.DARK),localStorage.setItem("theme",a.DARK)):(n.classList.replace(a.DARK,a.LIGHT),localStorage.setItem("theme",a.LIGHT))}function d(){o===a.DARK&&(n.classList.replace(a.LIGHT,a.DARK),l.setAttribute("checked",!0))}n.classList.add(a.LIGHT),l.addEventListener("change",u),d();
 },{"./sass/main.scss":"clu1","./templates/menu.hbs":"dgbP","./menu.json":"mA8c"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food/src.c7de4ead.js.map
+//# sourceMappingURL=/goit-js-hw-10-food/src.c6d93915.js.map
